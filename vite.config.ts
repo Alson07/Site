@@ -4,10 +4,10 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 // Replace with your actual repository name
-const repoName = 'Website'; // Changed to match actual repository name
+const repoName = 'Website';
 
 export default defineConfig(({ mode }) => ({
-  base: `/${repoName}/`, // Important for GitHub Pages
+  base: mode === 'production' ? `/${repoName}/` : '/',
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
