@@ -3,11 +3,16 @@ import react from "@vitejs/plugin-react-swc";
 import path from "path";
 import { componentTagger } from "lovable-tagger";
 
-// Replace 'your-repo-name' with your actual GitHub repository name
-const repoName = 'Website'; // This should match your repository name
+// Replace with your actual repository name
+const repoName = 'Site'; // This should match your repository name
 
 export default defineConfig(({ mode }) => ({
   base: `/${repoName}/`, // Important for GitHub Pages
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets',
+    sourcemap: true
+  },
   server: {
     host: "::",
     port: 8080,
