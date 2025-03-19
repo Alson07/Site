@@ -35,7 +35,7 @@ const Hero = () => {
             }`}
           >
             <Avatar className={`h-60 w-60 ${theme === 'dark' ? 'border-gray-800' : 'border-white'} border-4 shadow-xl mb-6`}>
-              <AvatarImage src="/Website/Images/a.png" alt="Profile" />
+              <AvatarImage src="/Images/a.png" alt="Profile" />
               <AvatarFallback className="bg-primary text-primary-foreground text-3xl">
                 <User className="h-20 w-20" />
               </AvatarFallback>
